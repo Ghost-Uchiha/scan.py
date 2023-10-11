@@ -9,7 +9,7 @@ from decouple import config
 
 app = Flask(__name__)
 
-@app.route('/result', methods=['GET'])
+@app.route('/result', methods=['POST'])
 def process_image():
     
     client = MongoClient('mongodb+srv://niravjangale:GhostUchiha@cluster0.oobzqch.mongodb.net/?retryWrites=true&w=majority')
