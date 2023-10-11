@@ -1,4 +1,4 @@
 services:
   - name: web
     buildCommand: python -m flask run | pip install --upgrade pip
-    env: python
+    env: python 3.9
