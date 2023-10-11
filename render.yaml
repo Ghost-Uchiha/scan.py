@@ -1,4 +1,4 @@
 services:
   - name: web
-    buildCommand: python -m flask run
+    buildCommand: python -m flask run | pip install --upgrade pip
     env: python
