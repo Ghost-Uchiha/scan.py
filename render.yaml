@@ -1,4 +1,7 @@
 services:
   - name: web
-    buildCommand: python -m flask run | pip install -r requirements.txt
+    buildCommand: 
+      - python -m flask run 
+      - pip install -r requirements.txt 
+      - pip install -U protobuf
     env: python 3.9
