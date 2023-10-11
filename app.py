@@ -15,7 +15,7 @@ def process_image():
     client = MongoClient('mongodb+srv://niravjangale:GhostUchiha@cluster0.oobzqch.mongodb.net/?retryWrites=true&w=majority')
     db = client['test']
     collection = db['images']
-    model_file_path = "https://drive.google.com/file/d/1sc1nqI3m_ncFLINkQ4hhqqDJD2LRJ4qa/view?usp=sharing"  # Update with the correct path
+    model_file_path = "model.h5"  # Update with the correct path
     model = load_model(model_file_path)
 
     latest_image = collection.find_one(sort=[('_id', -1)])
