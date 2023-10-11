@@ -1,0 +1,4 @@
+services:
+  - name: web
+    buildCommand: python -m flask run
+    env: python
